@@ -1,6 +1,6 @@
 # spring-boot-thin-tests
 Example of an application using spring-boot-starter-web, spring-boot-starter-data-mongodb and spring-boot-starter-test that only loads the beans envolved in the unit tests being executed to speed up the execution of the suit.
-It also uses [six2six framework](https://github.com/six2six/fixture-factory) to create fake objects to the unit tests, [fongodb](https://github.com/fakemongo/fongo) to fake a mongodb in memory during unit tests, lombok to avoid getters and setters boilerplates and provides example of mongo's native query and criteria queries. 
+It also uses [six2six framework](https://github.com/six2six/fixture-factory) to create fake objects to the unit tests, [fongodb](https://github.com/fakemongo/fongo) to fake a mongodb in memory during unit tests, lombok to avoid getters and setters boilerplates and provides example of mongo's [native query](https://github.com/gabrielcedran/spring-boot-thin-tests#mongodb-native-query) and [criteria queries](https://github.com/gabrielcedran/spring-boot-thin-tests#mongodb-criteria). 
 
 ### Spring MVC Tests:
 In order to load only the beans involved in the controller layers, annotate your class with @SpringBootTest and extend the AbstractHttpTest:
